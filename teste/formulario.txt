@@ -1,0 +1,50 @@
+<!-- formularios
+<form action = method ( ./idenx.php) vao e encaminhado p servior index 
+method= post ou get 
+
+post = dados nao viiveis na url
+get = visivel 
+
+
+seletores css = onde eu quero muda
+
+*universal
+(nome tag h1, p, td..)
+
+#id 
+
+.classe
+
+[dagrable = true]
+
+S1  S2 = descen
+S1>S2 = filho
+
+S1.classe..
+
+div< backgroundcolor:black>
+#id< backgroundcolor:pink>
+
+div.classe{backgroundcolor: blue} - especifica
+
+se 
+
+div< #id class: classe> = pink porque id é "maior"
+
+
+Position
+
+display : inline.block = largura e largura ( um oa lado do outro)
+
+static = padrão
+relative = permanece one ele ta ate dar uma ordem 
+relative{
+    top: 50px
+    left: 100px
+}
+posição em relação a static 
+
+fixed
+absolut
+
+flex = nao segue o luxo o hml ele segue o linear

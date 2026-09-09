@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            border: 1px solid black;
+        }
+        .box{
+            border: 1px solid pink;
+            display: inline-block;
+            width: 100px;   
+            height: 100px;
+        }
+                #box1{
+                    background-color: aquamarine;
+                    position: relative;
+                    top: 10px;
+                    left: 50px;
+
+                }
+                #box2{
+                    background-color: aqua;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                }
+                  #box3{
+                    background-color: paleturquoise;
+                    position: fixed;
+                    top: 0px;
+                    right: 0px;
+                }
+                 #box4{
+                    background-color: palevioletred;
+                    position: fixed;
+                    top: 0px;
+                    right: 100px;
+                }
+                 #box5{
+                    background-color: plum;
+                    position: fixed;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(-50% ,-50%);
+                }
+
+
+
+    </style>
+</head>
+<body>
+    <!--div#box$.box{box$}*5-->
+    <!-- <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <div id="box4" class="box">box4</div>
+    <div id="box5" class="box">box5</div>
+-->
+    <!-- div.conteiner>div#box$.box{box$}*5 -->
+   <!--- <div class="conteiner">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+    </div> -->
+        <h1>position</h1>
+      <div class="conteiner">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+    </div>
+</body>
+</html>
