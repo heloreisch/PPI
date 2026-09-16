@@ -9,20 +9,21 @@
         .container{
             border: 1px solid black;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 200px 200px 200px;
+          
+            grid-template-rows: 100px;
             background-color: palevioletred;
+            grid-template-areas: "Header Header
+            "gatao";
         }
         .box{
             border: 1px solid rgb(250, 150, 237);
         }
         #box-1{
-            grid-column-start: 1;
-            grid-column-end: 4;
-
-            grid-row-start: 1;
-            grid-row-end: 3;
+           grid-area: "Header";
             background-color: rgb(252, 142, 102);
+        }
+        #box-2{
+            background-color: rgb(252, 142, 102); 
         }
     </style>
 </head>
