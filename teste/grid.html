@@ -6,24 +6,30 @@
     <title>Grid</title>
 
     <style>
+
+      
         .container{
-            border: 1px solid black;
             display: grid;
-          
-            grid-template-rows: 100px;
+            height: 100vh;          
             background-color: palevioletred;
-            grid-template-areas: "Header Header
-            "gatao";
+            
         }
         .box{
             border: 1px solid rgb(250, 150, 237);
+      
         }
-        #box-1{
-           grid-area: "Header";
-            background-color: rgb(252, 142, 102);
+/* se for a largura de tal pix.. quero que mude p... */
+          @media screen and (max-width: 400px){
+            .container{
+                grid-template-columns: 1fr;
+            
+            }
         }
-        #box-2{
-            background-color: rgb(252, 142, 102); 
+          @media screen and (min-width: 401px) and (max-width: 500px){
+            .container{
+                grid-template-columns: 1fr 1fr;
+            
+            }
         }
     </style>
 </head>
