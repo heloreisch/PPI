@@ -1,0 +1,297 @@
+<!--Crie uma página de currículo com as seguintes informações (pode ser fictício):
+Nome completo
+Foto (use a tag <img>)
+Contato (e-mail e telefone, com links funcionais mailto: e tel:)
+Breve descrição (usando <p>)
+Lista de habilidades técnicas (<ul> ou <ol>)
+Formação acadêmica (use <section>, <article> ou <div>)
+Experiência profissional (descrições curtas com <strong>, <em>, <mark>)
+Crie uma tabela com sua grade de horários fictícia (matérias, dias e horários).
+Crie um menu de navegação interno, com âncoras que levem para as seções (Exemplo: #formacao, #experiencia).
+Use os seguintes elementos em algum lugar da página:
+<div>, <span>, <p>, <b>, <em>, <strong>, <mark>, <sub>, <details> e <summary>.
+Use imagens e links externos (por exemplo: link para seu LinkedIn, fictício ou não).
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Heloísa Mafra Reisch</title>
+</head>
+
+<body>
+
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .curriculo {
+            background-color: white;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+         header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+    <div>
+
+        <header>
+            <img src="../teste/img/fotoperfil.png" alt="">
+            <h1>Heloísa Mafra Reisch</h1>
+            <div>
+                <span>
+                    E-mail:
+                    <a href="mailto:heloisa@email.com">
+                        heloisa@email.com
+                    </a>
+                </span>
+
+                <span>
+                    Telefone:
+                    <a href="tel:48999999999">
+                        (48) 99999-9999
+                    </a>
+                </span>
+            </div>
+
+        </header>
+        <nav>
+            <b>Menu:</b>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacao">Formação</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#horarios">Horários</a>
+
+        </nav>
+
+
+        <section id="sobre">
+
+            <h2>Sobre mim</h2>
+
+            <p>
+                Sou estudante da área de tecnologia, interessada em
+                desenvolvimento de sistemas e programação. Tenho interesse
+                em aprender novas tecnologias e desenvolver projetos.
+                Atualmente, busco aprimorar meus conhecimentos em
+                desenvolvimento web
+            </p>
+
+            <p>
+                Tenho facilidade para trabalhar em equipe e gosto de
+                aprender coisas novas. Meu objetivo é desenvolver minhas
+                habilidades profissionais e acadêmicas.
+            </p>
+
+        </section>
+
+
+        <section id="habilidades">
+            <h2>Habilidades técnicas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>MySQL</li>
+            </ul>
+
+        </section>
+
+
+        <section id="formacao">
+            <h2>Formação acadêmica</h2>
+            <article>
+                <h3>Curso Técnico em Informática</h3>
+                <p>
+                    <strong>Instituição:</strong> Instituto Federal de Santa Catarina
+                </p>
+
+                <p>
+                    <strong>Período:</strong> 2024 - 2026
+                </p>
+
+                <p>
+                    Formação voltada para programação, desenvolvimento web,
+                    banco de dados e desenvolvimento de sistemas.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Curso de Desenvolvimento Web</h3>
+                <p>
+                    <strong>Instituição:</strong> Curso Online
+                </p>
+
+                <p>
+                    <strong>Conclusão:</strong> 2026
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section id="experiencia">
+            <h2>Experiência profissional</h2>
+            <article>
+                <h3>Estagiária de Desenvolvimento</h3>
+                <p>
+                    <strong>Empresa:</strong> Empresa de Tecnologia
+                </p>
+
+                <p>
+                    Atuação no desenvolvimento e manutenção de páginas web,
+                    utilizando <em>HTML, CSS e JavaScript</em>.
+                </p>
+
+                <p>
+                    Durante o estágio, participei da criação de
+                    <mark>interfaces e sistemas web</mark>.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>Projeto Acadêmico</h3>
+                <p>
+                    Desenvolvimento de um sistema web utilizando
+                    >Node.js, banco de dados MySQL e
+                    JavaScript.
+                </p>
+
+            </article>
+
+        </section>
+        <section id="horarios">
+            <h2>Grade de horários</h2>
+            <table container="1">
+
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Portugues</td>
+                    <td>PI</td>
+                    <td>PPI</td>
+                    <td>PDS</td>
+                    <td>Matematica</td>
+                </tr>
+
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>PI</td>
+                    <td>PI</td>
+                    <td>PPI</td>
+                    <td>Matematica</td>
+                    <td>Empreendedorismo</td>
+                </tr>
+
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>PI</td>
+                    <td>PJ</td>
+                    <td>PPI</td>
+                    <td>Sociologia</td>
+                    <td>PDM</td>
+                </tr>
+
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>PI</td>
+                    <td>PJ</td>
+                    <td>PPI</td>
+                    <td>Sociologia</td>
+                    <td>PDM</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Informações adicionais</h2>
+
+            <details>
+
+                <summary>Mais informações sobre mim</summary>
+
+                <p>
+                    Tenho interesse em tecnologia, programação e
+                    desenvolvimento de sistemas. Estou sempre buscando
+                    aprender novas ferramentas e tecnologias.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <section>
+
+            <h2>Conhecimentos</h2>
+            <span>
+                HTML<sub>5</sub> e tecnologias para desenvolvimento web.
+        </span>
+            <span>
+                Também possuo conhecimentos em <b>programação</b>,
+                desenvolvimento de sistemas e banco de dados.
+            </span>
+
+        </section>
+
+
+        <section>
+
+            <h2>Links</h2>
+
+            <p>
+                <a href="https://www.linkedin.com/in/helo%C3%ADsa-mafra-reisch-4510b93a3/">
+                    Link para o LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <a href=https://github.com/heloreisch>
+                    Link para o GITHUB
+                </a>
+            </p>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
