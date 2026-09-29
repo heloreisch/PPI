@@ -1,22 +1,187 @@
-    <!--Arquivo: 1.html
+<!--Arquivo: 1.html
 Crie um documento HTML com a estrutura básica (<!DOCTYPE html>, <html>, <head>, <body>).
 No body, escreva um pequeno texto explicando:
  ➜ A diferença entre Internet e Web (máximo de 5 linhas).
 Coloque um comentário no código indicando o autor e a data de criação
-Ainda no body crie uma tag div e conte a história da internet e web, colocando os principais marcos, adicione fotos, tags, relatos links, marcações. (Use todas tags que vimos:html,head,body,title,img,p, span, div,hr, em, it, mark, sub, sup, ul, li, ol, dl , dt , table, tr, td,th, caption, tbody, theader, tfoot.).
+Ainda no body crie uma tag div e conte a história da internet e web,
+ colocando os principais marcos, adicione fotos, tags, relatos 
+ links, marcações. (Use todas tags que vimos:html,head,body,title,img
+ ,p, span, div,hr, em, it, mark, sub, sup, ul, li, ol, dl , dt ,
+  table, tr, td,th, caption, tbody, theader, tfoot.).
 -->
+<!--<html>  → página HTML
+<head>  → informações da página
+<title> → título da aba
+<body>  → conteúdo visível
+
+<img>   → imagem
+<p>     → parágrafo
+<span>  → pequeno trecho
+<div>   → bloco/caixa
+<hr>    → linha
+
+<em>    → ênfase
+<i>     → itálico
+<mark>  → destaque
+<sub>   → abaixo
+<sup>   → acima
+
+<ul>    → lista com marcadores
+<ol>    → lista numerada
+<li>    → item da lista
+
+<dl>    → lista de definições
+<dt>    → termo
+<dd>    → descrição
+
+<table> → tabela
+<tr>    → linha
+<th>    → cabeçalho
+<td>    → dado/célula
+<caption> → título da tabela
+<thead> → cabeçalho
+<tbody> → corpo
+<tfoot> → rodapé -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lista1</title>
 </head>
-<body>
- <h1>Internet ou WEB?</h1>   
-            <p>A internet é a infrestrutara fsica e global (o local) enquanto a web é um serviço que a internet oferece</p>
+<thead>
+    <span>feito por H.M.R. 20/09/2026</span>
+</thead>
+<style>
+    
+    td{
+        border: 1px solid black;
+       border-collapse: collapse; 
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<tbody>
 
+    <body>
+        <div class="dife">
+            <h2>Internet ou WEB?</h2>
+            <p>A internet é a infrestrutara fsica e global (o local)
+                enquanto a web é um serviço que a internet oferece</p>
+        </div>
+        <div class="historia">
+            <h2>A história da internet</h2>
+            <p>A história da internet começa no ambiente da
+                <a href="https://pt.wikipedia.org/wiki/Guerra_Fria"> <strong> Guerra Fria (1945-1991).</strong></a>
+                As duas super potências envolvidas, Estados Unidos e União Soviética, estavam
+                divididas nos blocos socialista e capitalista e disputavam poderes e hegemonias.
+            </p>
             
+            <h3>Arpanet </h3>
+            <p>Com o intuito de facilitar a troca de informações,
+                pois temiam ataques dos soviéticos, o Departamento de Defesa dos Estados Unidos
+                <mark>(ARPA - Advanced Research Projects Agency)</mark> criou um sistema de compartilhamento
+                de informações entre pessoas distantes geograficamente, a fim de facilitar as estratégias de guerra.
+            </p>
+
+            <img src="../teste/img/arpa.png" alt>
+            
+
+            <span>Nesse momento, surge o protótipo da primeira rede de internet,a <i>Arpanet (Advanced Research Projects
+                    Agency Network)</i> .</span>
+
+                    <img src="../teste/img/arpanet.png" alt>
+
+            <p> Assim, no dia 29 de outubro de 1969 foi estabelecida a primeira conexão entre a Universidade
+                da Califórnia e o Instituto de Pesquisa de Stanford. Foi um momento histórico, uma vez que o primeiro
+                e-mail foi enviado.</p>
+
+            <h3>Criação do www</h3>
+
+            <p>Já na década de 90, o cientista, físico e professor britânico <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee </a>desenvolveu um navegador ou
+                browser, a <em> World Wide Web (www)</em>, a Rede Mundial de Computadores - Internet.
+
+                <img src="./img/" alt=>
+
+            <p> Sua criação é responsável por apresentar ao mundo o modo como utilizamos a internet atualmente.
+                Portanto, apesar de não ter sido
+                o inventor da conexão entre computadores geograficamente distantes (a já citada Arpanet), foi o
+                britânico
+                quem desenvolveu o modelo que acessamos cotidianamente.</p>
+
+            <span>A partir disso, a década de 90 ficou conhecida como o "boom da internet", pois foi quando ela se
+                popularizou
+                pelo mundo.</span>
+
+            <span> Essa popularização aconteceu com o surgimento de novos browsers ou navegadores e o aumento do número
+                de
+                usuários, navegadores da internet.</span>
+
+            <span><strong>Exemplos de navegadores da época:</strong></span>
+            <ul>
+                <li>Internet Explorer;</li>
+                <li>Netscape;</li>
+                <li>Mozilla Firefox;</li>
+                <li>Opera;</li>
+                <li>Lynx</li>
+            </ul>
+            </p>
+        
+            <div class="tabela">
+                <table>
+                    <caption>Resumo da criação da internet</caption>
+                    <tr>
+                        <td><i>Periodo</i></td>
+                        <td><i>acontecimento</i></td>
+                        <td><i>resumo</i></td>
+                    </tr>
+                    <tr>
+                        <td>945–1991</td>
+                        <td>Guerra Fria</td>
+                        <td>EUA e União Soviética disputavam poder e tecnologia. Esse contexto contribuiu para o
+                            desenvolvimento de redes de comunicação.</td>
+                    </tr>
+                    <tr>
+                        <td>1969</td>
+                        <td>ARPANET</td>
+                        <td>A ARPA, dos EUA, criou uma rede para facilitar a troca de informações entre computadores
+                            distantes.</td>
+                    </tr>
+                    <tr>
+                        <td>29/10/1969</td>
+                        <td>Primeira conexão</td>
+                        <td>Foi estabelecida uma conexão entre a Universidade da Califórnia e o Instituto de Pesquisa de
+                            Stanford.</td>
+                    </tr>
+                    <tr>
+                        <td>Década de 1990</td>
+                        <td>World Wide Web (WWW)</td>
+                        <td>Tim Berners-Lee desenvolveu a Web, permitindo acessar informações por meio de páginas e
+                            navegadores.</td>
+                    </tr>
+                    <tr>
+                        <td>Década de 1990</td>
+                        <td>Popularização da Internet</td>
+                        <td>A Internet se espalhou pelo mundo, com o surgimento e crescimento de navegadores e sites.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anos 1990–2000</td>
+                        <td>Sites e redes sociais</td>
+                        <td>Surgiram serviços como MSN, Orkut, Facebook e Twitter, ampliando a comunicação pela
+                            Internet.</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+</tbody>
+<tfoot>uou</tfoot>
 </body>
+
 </html>
