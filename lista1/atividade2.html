@@ -1,0 +1,144 @@
+<!--Atividade 2 – Explique o que é o protocolo HTTP
+	Arquivo: 2_http.html
+Explique o que é o protocolo HTTP e como é usado na WEB ilustrando(com imagens) e explicações exemplos de requisições. 
+Descreva detalhes dos campos de um request que você capturar e response.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    
+        .imagens, h1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagens img {
+    width: 400px;
+}
+    
+</style>
+
+
+<body>
+
+<h1>Protocolo HTTP</h1>
+
+    <span>O HTTP (Hypertext Transfer Protocol ou Protocolo de Transferência de Hipertexto) é o protocolo de comunicação
+        da camada de aplicação que serve como base para toda a troca de dados na <i>World Wide Web (Web)</i></span>
+
+    <p>Ele funciona seguindo um modelo clássico de cliente-servidor através de um ciclo de requisição = Request e
+          resposta = Response
+        O HTTP funciona no modelo cliente-servidor (ou client-service, em Inglês). Neste modelo, o cliente é quem faz as
+        requisições, ou seja, é quem solicita dados ou envia dados, e o servidor é quem responde às requisições, isto é,
+        é quem envia os dados solicitados ou armazena os dados enviados.
+        <div class="imagens">
+        <img src="../teste/img/req.png" alt="">
+        </div>
+
+        O cliente pode ser uma página web na qual você faz, por exemplo, um cadastro e as informações inseridas, como
+        nome, e-mail, senha e etc são enviadas para o servidor, que as armazena em um banco de dados.
+    </p>
+
+    <span>Assim, quando precisar recuperar estas informações, a página faz uma nova requisição ao servidor “pedindo de
+        volta” os dados guardados no banco. Desta forma, quando você entrar na aba do seu perfil nessa página,
+        conseguirá visualizar os mesmos nome, e-mail e etc que inseriu no cadastro.</span>
+
+
+
+    <p> As informações trocadas entre cliente e servidor também possuem um formato padrão. Nos dias atuais, o JSON
+        (JavaScript Object Notation) é amplamente empregado e utiliza um modelo chave-valor.
+
+        A imagem abaixo mostra a interface (formulário) na qual você insere as informações no lado do cliente (página
+        web) e as informações como são enviadas para o servidor, em JSON.
+         <div class="imagens">
+        <img src="../teste/img/tela.png" alt="">
+        <img src="../teste/img/post.png" alt="">
+        </div>
+    </p>
+    <span>As requisições HTTP mais utilizadas são quatro: POST, GET, PUT e DELETE.
+            <h3>Metodo POST</h3>
+         é a utilizada no exemplo acima do cadastro, se encarrega de enviar dados do cliente para o servidor,
+        geralmente está presente nos formulários que submetem informações.
+        </span>
+
+<h3>Exemplo de uma requisição HTTP por meotdo post</h3>
+<p>
+A imagem abaixo apresenta uma requisição HTTP capturada por meio da ferramenta
+de desenvolvedor do navegador, na aba Network. Nesse caso, foi realizada uma
+requisição utilizando o método POST para o endereço
+<code>http://localhost:3000/cadastro</code>.
+</p>
+  <div class="imagens">
+<img src="../teste/img/request.png" alt="">
+</div>
+
+<h3>requisição</h3>
+
+<ul>
+    <li><strong>Request URL:</strong> 
+        indica o endereço para o qual a requisição
+    foi enviada. Neste exemplo, a requisição foi enviada para
+    <code>http://localhost:3000/cadastro</code>.</li>
+
+    <li><strong>Request Method:</strong> 
+        indica o método HTTP utilizado
+    Neste caso, foi utilizado o método <strong>POST</strong>, geralmente usado
+    para enviar dados ao servidor.</li>
+
+    <li><strong>Status Code:</strong> 
+        indica o resultado retornado pelo servidor
+    O código <strong>302 Found</strong> indica que o servidor solicitou um
+    redirecionamento para outro endereço.</li>
+
+    <li><strong>Remote Address:</strong> 
+        mostra o endereço do servidor que
+    recebeu a requisição. Neste caso, o servidor está sendo executado
+    localmente na porta <code>3000</code>.</li>
+
+    <li><strong>Referrer Policy:</strong> 
+        define quais informações sobre a
+    página de origem podem ser enviadas junto à requisição.</li>
+</ul>
+<h3>response da requisição</h3>
+<p>
+Ao acessar a aba Response da requisição, o navegador apresenta a mensagem
+"Failed to load response data". Isso ocorre porque a resposta do servidor
+possui o código de status 302 Found, indicando que a requisição foi
+redirecionada para outro endereço. Por esse motivo, o conteúdo da resposta
+original não está disponível nessa aba.
+</p>
+  <div class="imagens">
+<img src="../teste/img/response.png" alt="">
+</div>
+
+<h3>Metodo GET</h3>
+      <p>
+        
+        GET: é utilizada para solicitar ou consultar informações 
+        armazenadas no servidor. Por exemplo, quando o usuário acessa uma 
+        página de login, o navegador pode realizar uma requisição GET para
+         solicitar ao servidor a página que será exibida. Na imagem abaixo,
+          o navegador apresenta a tela de login que foi solicitada ao servido.</p>
+            <div class="imagens">
+        <img src="../teste/img/get.png" alt="">
+</div>
+
+        <div> 
+            todas as informações foram retiradas do site: <a href="https://medium.com/@alan.stfreitas/o-que-%C3%A9-o-protocolo-http-como-ele-funciona-e-as-principais-requisi%C3%A7%C3%B5es-fc7ce2dbb57e">Medium</a>
+        </div>
+</body>
+
+</html>
