@@ -1,0 +1,100 @@
+<!--Crie uma página HTML com um título <h1> e vários parágrafos contendo texto "Lorem Ipsum", Em cada parágrafo, use uma fonte e cor diferentes, 
+    além de marcar palavras específicas com a tag <span>, aplicando estilos personalizados a essas palavras.
+        
+        <h1> = cria o titulo principal
+        <p> = cria cada paragrafo
+        <span> = permite aplica um estilo diferente somente a uma parte do texto
+        font-family = muda a fonte
+        color = muda a cor do texto
+        font-weight: bold = deixa a palavra em negrito
+        font-style: italic = deixa a palavra em italico
+        text-decoration: underline = coloca sublinhado
+        background-color = coloca uma cor de fundo na palavra  
+        
+        
+        -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem Ipsum</title>
+
+    <style>
+        
+        .paragrafo1 {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 11, 194);
+        }
+
+        .paragrafo1 span {
+            color: rgb(255, 0, 149);
+            font-weight: bold;
+        }
+
+     
+        .paragrafo2 {
+            font-family: Georgia, serif;
+            color: rgb(27, 2, 255);
+        }
+
+        .paragrafo2 span {
+            color: rgb(0, 204, 255);
+            font-style: italic;
+        }
+
+    
+        .paragrafo3 {
+            font-family: "Courier New", monospace;
+            color: rgb(24, 245, 116);
+        }
+
+        .paragrafo3 span {
+            color: orange;
+            text-decoration: underline;
+        }
+
+       
+        .paragrafo4 {
+            font-family: Verdana, sans-serif;
+            color: rgb(181, 230, 6);
+        }
+
+        .paragrafo4 span {
+            color: rgb(238, 255, 3);
+            background-color: rgb(255, 115, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lorem Ipsum</h1>
+
+    <p class="paragrafo1">
+        Lorem ipsum 
+        <span>Lorem Ipsum</span> Lorem Ipsum
+       Lorem Ipsum
+    </p>
+
+    <p class="paragrafo2">
+        Lorem Ipsum
+        <span>Lorem Ipsum</span>. 
+      Lorem Ipsum
+    </p>
+
+    <p class="paragrafo3">
+       Lorem Ipsum
+        <span>Lorem Ipsum</span> Lorem Ipsum
+    </p>
+
+    <p class="paragrafo4">
+        Lorem ipsum 
+        <span>Lorem Ipsum</span> vLorem Ipsum
+    </p>
+
+</body>
+
+</html>
