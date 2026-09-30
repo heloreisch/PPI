@@ -1,0 +1,181 @@
+<!--Estrutura da animação:
+🛶 Um barquinho:
+Utilizando uma div com imagem de fundo (background-image), aplique:
+	Animação com @keyframes para simular balanço (oscilar levemente).
+	Movimento horizontal (ida da esquerda para a direita, em loop infinito).
+🌊 Um mar animado:
+	Utilize a div.mar e adicione pseudo elementos ::before e ::after com radial-gradient ou outro método criativo.
+☁️ Uma nuvem animada:
+	Crie uma div que simule uma nuvem com border-radius e box-shadow para formar o desenho.
+	Faça a nuvem atravessar o céu lentamente com @keyframes.
+📦 Sugestões:
+Use position: absolute para posicionar os elementos.
+Utilize z-index para garantir que o barco fique à frente das ondas.
+O fundo do céu pode ser feito com linear-gradient.
+
+📝 Objetivos da atividade:
+	Praticar animação com @keyframes.
+	Trabalhar camadas (z-index) e posicionamento (position, top, left, etc).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <style>
+
+        :root {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .ceu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(
+                to bottom,
+                #5fa7c4,
+                #ccedf1
+            );
+            
+        }
+
+        .canoa {
+            font-size: 10rem;
+            position: absolute;
+            bottom: 100px;
+            left: -150px;
+            animation:
+                navegando 15s linear infinite,
+                balancar 2s ease-in-out infinite;
+        }
+
+        .nuvem {
+            font-size: 5rem;
+            position: absolute;
+            top: 100px;
+            left: -150px;
+            animation:
+                navegando 30s linear infinite,
+                balancar 4s ease-in-out infinite;
+        }
+
+        @keyframes navegando {
+
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 100%;
+            }
+
+        }
+
+        @keyframes balancar {
+
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+
+        }
+
+        .mar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #2196f3;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .mar::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 80px;
+            top: -35px;
+            left: -50%;
+            background: radial-gradient(
+                ellipse 20px 10px at 20% 10%,
+                #64b5f6 0%,
+                #64b5f6 70%,
+                transparent 72%
+            );
+
+            background-size: 200px 60px;
+            animation: ondas 6s linear infinite;
+        }
+
+        .mar::after {
+
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 70px;
+            top: 10px;
+            left: -50%;
+            background: radial-gradient(
+                ellipse 20px 10px at 20% 10%,
+                #90caf9 0%,
+                #90caf9 65%,
+                transparent 68%
+            );
+
+            background-size: 260px 70px;
+            animation: ondas 9s linear infinite reverse;
+        }
+
+        @keyframes ondas {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-100px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="ceu"></div>
+    <span class="nuvem">☁️</span>
+    <span class="canoa">🛶</span>
+    <div class="mar"></div>
+</body>
+
+</html>
