@@ -1,0 +1,179 @@
+<!--Jogue todos níveis do flex frog , descreva detalhadamente a solução de 2 níveis,
+  acima do 10, explicando cada uma das propriedades utilizadas e o efeito que ela tem.-->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+     margin: 40px;
+     background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333333;
+}
+
+h2 {
+    color: #444444;
+}
+
+a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #333333;
+    padding: 8px;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999999;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+        .imagens, h1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagens img {
+    width: 400px;
+}
+    
+    </style>
+    
+  </head>
+  <body>
+    <div>
+        <h3>nivel 19</h3>
+
+        <p>O código utiliza três propriedades do Flexbox que trabalham juntas para organizar os elementos dentro do #pond. 
+             display 1: <strong>flex:</strong> ativa o Flexbox no elemento, fazendo com que os elementos que estão dentro dele possam 
+            ser organizados de acordo com as regras do Flexbox. 
+            <br>
+
+            <img  class="imagens"  src="../teste/img/flexfrog1.png" alt="">
+
+            <br>
+
+            display 2: <strong>flex-direction: column</strong> define que a direção principal da organização será vertical, ou seja, os elementos 
+            serão colocados um abaixo do outro, formando uma coluna. 
+            <br>
+            <img  class="imagens" src="..//teste/img/flexfrog1.5.png" alt="">
+            <br>
+            display 3: <strong>flex-wrap: wrap</strong> permite que os elementos 
+            quebrem para uma nova coluna quando não houver mais espaço disponível na coluna atual.
+             Dessa forma, primeiro os sapos são organizados de cima para baixo e, 
+            quando a primeira coluna fica cheia, os próximos sapos passam para a coluna seguinte, permitindo formar as 
+            três colunas solicitadas no exercício.
+        <br>
+            <img  class="imagens"  src="..//teste/img/flexfrog2.png" alt="">
+            <br>
+        </p>
+
+        <h4>resposta;</h4>
+        <span>#pond {
+    display: flex; /* ativa o Flexbox para poder organizar os elementos */
+    <br>
+    flex-direction: column; /* organiza os elementos em uma coluna, em sequência */
+    <br>
+    flex-wrap: wrap; /* permite quebrar para uma nova coluna quando não houver mais espaço */
+        }</span>
+    </div>
+   <div>
+   <h3>nivel 21</h3>
+
+<p>
+    O código utiliza três propriedades do Flexbox para organizar os elementos
+    dentro do <strong>#pond</strong>. Neste nível, a principal novidade é a
+    propriedade <strong>align-content</strong>, que controla como as diferentes
+    linhas de elementos são posicionadas dentro do espaço disponível do container.
+
+    <br>
+
+    display 1: <strong>flex</strong> ativa o Flexbox no elemento, fazendo com
+    que os elementos que estão dentro dele possam ser organizados de acordo
+    com as regras do Flexbox.
+
+    <br>
+
+    display 2: <strong>flex-wrap: wrap</strong> permite que os elementos
+    sejam distribuídos em várias linhas quando não houver espaço suficiente
+    para que todos fiquem em uma única linha.
+
+    <br>
+
+    <img class="imagens" src="../teste/img/flexfrog2.1.png" alt="">
+
+    <br>
+
+    display 3: <strong>align-content: flex-start</strong> faz com que as
+    linhas de elementos sejam agrupadas no início do container. Assim,
+    as diferentes linhas de sapos ficam posicionadas na parte superior
+    do lago, sem distribuir o espaço restante entre elas.
+
+    <br>
+
+    <img class="imagens" src="../teste/img/flexfrog2.2.png" alt="">
+
+    <br>
+
+    Dessa forma, o <strong>align-content: flex-start</strong> organiza as
+    linhas no início do container, deixando o espaço restante abaixo delas.
+</p>
+
+<h4>resposta;</h4>
+
+<span>
+#pond {
+    display: flex; /* ativa o Flexbox para poder organizar os elementos */
+    <br>
+    flex-wrap: wrap; /* permite que os elementos quebrem para novas linhas */
+    <br>
+    align-content: flex-start; /* coloca todas as linhas no início do container */
+}
+</span>
+   </div>
+  </body>
+  </html>
