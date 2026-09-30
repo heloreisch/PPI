@@ -10,45 +10,43 @@ Arquivo: 4a-display-.html  4b-display-.html  e 4c-display-.html-->
 
      <style>
 
-        div{
-            border: 1px solid black;
-        }
+
         .box{
             display: inline-block;
             width: 100px;   
             height: 100px;
         }
                 #box1{
-                    background-color:blueviolet;
-                    position: fixed;
-                    bottom: 0px;
+                    background-color:blueviolet; /* o box1 vai ser exibido no canto inferior (bottom)  e a esquerda (left)*/
+                    position: fixed; /* fixed p levar o layout da tela se fosse relative relative = permanece one ele ta ate dar uma ordem */
+                    bottom: 0px; /* 0 p fica encostado na origem (bottom) */
                     left: 0px;
 
                 }
                 #box2{
-                    background-color: green;
+                    background-color: green; /* o box2 vai ser exibido no canto inferior (bottom)  e a direita (right)*/
                     position: fixed;
                     bottom: 0px;
                     right: 0px;
                 }
                   #box3{
-                    background-color: red;
+                    background-color: red;/* o box3 vai ser exibido no canto superior (top)  e a esquerda (left)*/
                     position: fixed;
                     top: 0px;
                     left: 0px;
                 }
-                 #box4{
+                 #box4{ /* o box4 vai ser exibido no canto superior (top)  e a direita (rigth)*/
                     background-color: yellow;
                     position: fixed;
                     top: 0px;
                     right: 0px;
                 }
                  #box5{
-                    background-color: magenta;
+                    background-color: magenta;/* o box5 vai ser exibido no  meio da tela*/
                     position: fixed; 
-                    top: 50%;
-                    right: 50%;
-                    transform: translate(-50% ,-50%);
+                    top: 50%; /*topo para no 50 ou seja top 50 bottom 50 = meio*/
+                    right: 50%;/*mesma ideia */
+                    transform: translate(-50% ,-50%); /*puxa o próprio elemento metade da sua largura para a esquerda e metade da sua altura para cima*/
                 }
 
 
