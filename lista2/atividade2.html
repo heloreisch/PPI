@@ -1,0 +1,117 @@
+<!--
+
+Seja o trecho de código HTML e CSS da figura a seguir e explique porque cada regra foi aplicada em cada item.
+
+seletores css = onde eu quero muda
+
+*universal
+(nome tag h1, p, td..)
+
+#id 
+
+.classe
+
+[dagrable = true]
+
+S1  S2 = descen
+S1>S2 = filho
+
+S1.classe..
+
+div< backgroundcolor:black>
+#id< backgroundcolor:pink>
+
+div.classe{backgroundcolor: blue} - especifica
+
+se 
+
+div< #id class: classe> = pink porque id é "maior"
+-->
+
+<!DOCTYPE html>
+
+<head>
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/
+      li {
+         color: red;
+      }
+
+      /*regra 2*/
+      .churras {
+         color: green;
+      }
+
+      /*regra 3*/
+      .fruta {
+         color: gray
+      }
+
+      /*regra 4*/
+      li+li.churras {
+         color: black;
+      }
+
+      /*regra 5*/
+      .churras[draggable="true"] {
+         color: magenta;
+      }
+
+      /*regra 6*/
+      #lip1,
+      #lip2,
+      #lip3 {
+         color: blue
+      }
+
+      /*regra 7*/
+      #lip3.fruta {
+         color: orange
+      }
+
+      /*regra 8*/
+      ol>li.churras#lip5 {
+         color: purple
+      }
+   </style>
+</head>
+
+<body>
+   <ol>
+      <!--item 1-->
+      <li id="lip0">Abacaxi</li>
+      <!--no final a cor fica vermelho pois o id é li-->
+
+      <!--item 2-->
+      <li class="fruta">Melão</li>
+      <!--no final o melão fica cinza inves de vermelho pois a classe tem peso 'maior' que tag universal (li)-->
+
+      <!--item 3-->
+      <li id="lip2" class="fruta">Pera</li>
+      <!--no final a pera fica azul inves de cinza pois a id tem peso 'maior' que classe (fruta)-->
+
+
+      <!--item 4-->
+      <li id="lip3" class="fruta">Uva</li>
+      <!--a uva fica laranja ao inves de azul pois no css é dado tanto o id quando a class fazedno com que essa fruta seja especifica-->
+      
+      <!--item 5-->
+      <li id="lip4" class="fruta">Maçã</li>
+   
+      <!--a maça fica cinza pois nao existe no css o id4 fazendo com que seja 'puxado' o css da classe fruta-->
+      
+      <!--item 6-->
+      <li class="churras">Carne</li>
+      <!--Possui .churras. Além disso, é um <li> que possui outro <li> imediatamente antes dele. li+li.churras é mais específico que apenas .churras.-->
+
+      <!--item 7-->
+      <li class="churras">Linguiça</li>
+
+      <!--item 8-->
+      <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+      <!-- fica magenta pois os atributos class e draggable se 'somam' ultrapassando o id-->
+   </ol>
+</body>
+
+</html>
