@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout perfil</title>
+    <style>
+
+
+     body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(138, 138, 146);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.usuarios {
+    width: 800px;
+    height: 600px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(220, 220, 221);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.endereco {
+    font-size: 11px;
+    color: #aaa;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="usuarios">
+
+        <div class="usuario">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"> <!--pesquisado-->  
+
+            <div class="info">
+                <span class="nome">Linda Hart</span>
+                <span class="endereco">6765 Shady Ln Dr</span>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+            <div class="info">
+                <span class="nome">Roger Medina</span>
+                <span class="endereco">2420 Paddock Way</span>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg">
+
+            <div class="info">
+                <span class="nome">Dean Sullivan</span>
+                <span class="endereco">6727 Airline Ave</span>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+            <div class="info">
+                <span class="nome">Elizabeth Austin</span>
+                <span class="endereco">6685 Blossom Hill Rd</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
