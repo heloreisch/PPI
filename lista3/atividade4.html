@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout com Flexbox</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+        }
+
+        .container {
+            width: 90%;
+            height: 350px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 1;
+            border-radius: 25px;
+            overflow: hidden; /*redondinho*/
+            position: relative;
+        }
+
+        .principal {
+            flex: 4;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .informacao {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .informacao h3 {
+            font-size: 20px;
+        }
+
+        .informacao p {
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+
+            <img src="/teste/img/fotoperfil.png" alt="Floresta">
+
+            <div class="informacao">
+                <h3>Floresta</h3>
+                <p>Natureza</p>
+            </div>
+
+        </div>
+
+
+        <!-- CARD PRINCIPAL -->
+        <div class="card principal">
+
+            <img src="/teste/img/clienteSer.jpg" alt="Estrada">
+
+            <div class="informacao">
+                <h3>Oretamøw</h3>
+                <p>Omuke trughte a outta</p>
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="card">
+
+            <img src="/teste/img/imagemERN.jpg" alt="Montanhas">
+
+            <div class="informacao">
+                <h3>Montanhas</h3>
+                <p>Paisagem</p>
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="card">
+
+            <img src="/teste/img/flexfrog2.2.png" alt="Deserto">
+
+            <div class="informacao">
+                <h3>Deserto</h3>
+                <p>Aventura</p>
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+        <div class="card">
+
+            <img src="/teste/img/flexfrog2.png" alt="Lago">
+
+            <div class="informacao">
+                <h3>Lago</h3>
+                <p>Natureza</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
