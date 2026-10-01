@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            width: 375px;
+            height: 667px;
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .logo {
+            margin-top: 25px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .campos {
+            width: 95%;
+            margin-top: 45px;
+        }
+
+        .campo {
+            height: 23px;
+            background-color: #e9e9e9;
+            border-radius: 4px;
+            margin-bottom: 14px;
+        }
+
+        .final {
+            margin-top: 100px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 58px;
+            height: 58px;
+            background-color: #e1e1e1;
+            border-radius: 50%;
+        }
+
+        .botao {
+            width: 98px;
+            height: 22px;
+            background-color: #e9e9e9;
+            border-radius: 4px;
+            margin-top: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        Company Logo
+    </div>
+
+    <div class="campos">
+        <div class="campo"></div>
+        <div class="campo"></div>
+        <div class="campo"></div>
+        <div class="campo"></div>
+    </div>
+
+    <div class="final">
+        <div class="circulo"></div>
+        <div class="botao"></div>
+    </div>
+
+
+
+</body>
+
+</html>
