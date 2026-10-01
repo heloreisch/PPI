@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 10% 85% 5%;
+            gap: 3px;
+            background-color: white;
+        }
+
+
+        header {
+            grid-column: 1 / 4;
+            grid-row: 1;
+            background-color: #f2b900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+
+        .left {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: #0ca15b;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        main {
+            grid-column: 2;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 12% 78% 10%;
+            gap: 3px;
+            background-color: #4285e5;
+        }
+
+
+        .banner {
+            background-color: #df3935;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+
+        .maincontent {
+            background-color: #4285e5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+        }
+
+
+        .lowcontent {
+            background-color: #099151;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 12px;
+        }
+
+
+        .right {
+            grid-column: 3;
+            grid-row: 2;
+            background-color: #f2b900;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+
+        footer {
+            grid-column: 1 / 4;
+            grid-row: 3;
+            background-color: #4285e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+       @media screen and (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            7fr
+            8fr
+            10fr
+            45fr
+            8fr
+            10fr
+            7fr;
+
+        gap: 5px;
+    }
+
+    header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main {
+        display: contents;
+    }
+
+    
+    .banner {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ 
+    .left {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .maincontent {
+        grid-column: 1;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+  
+    .right {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+   
+    .lowcontent {
+        grid-column: 1;
+        grid-row: 6;
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        grid-column: 1;
+        grid-row: 7;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <p>header</p>
+    </header>
+
+    <aside class="left">
+        <p>left aside</p>
+    </aside>
+
+    <main>
+
+        <div class="banner">
+            <p>banner</p>
+        </div>
+
+        <div class="maincontent">
+            <p><strong>main content</strong></p>
+        </div>
+
+        <div class="lowcontent">
+            low content
+        </div>
+
+    </main>
+
+    <aside class="right">
+        <p>right aside</p>
+    </aside>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+</body>
+
+</html>
