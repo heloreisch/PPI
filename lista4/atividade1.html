@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+
+        h3 {
+            color: #333333;
+            text-align: center;
+        }
+
+
+        img {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+        }
+        
+        .col{
+            color: magenta;
+        }
+        .li{
+            color: palevioletred;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h3>nivel 2</h3>
+
+        <img src="../teste/img/grid2.png" alt="">
+        <p>display grid = container grid,
+             Assim, podemos controlar exatamente em qual <span class="li">linha</span>  e <span class="col">coluna</span> o elemento ficará.
+           <span class="col">grid-template-columns</span> 20% 20% 20% 20% 20%;
+            Isso divide o jardim em 5 colunas iguais.
+            <span class="li">grid-template-rows:</span> 20% 20% 20% 20% 20%;
+            Faz a mesma coisa verticalmente: cria 5 linhas iguais.
+            Portanto, o jardim possui:
+           <span> 5 coluns × 5 linhas = 25 células.</span></p>
+
+
+
+           <img src="../teste/img/grid1.png" alt="">
+        <p><strong>grid-column-start: 5;</strong>
+            estamos dizendo:
+            Comece o elemento na linha vertical número 5.
+            Como o #poison ocupa uma célula de largura padrão, ele fica na quinta coluna: ou seja start significa o
+            ponto onde o elemento começa, e 5 indica a linha vertical do Grid onde ele deve começar.</p>
+
+    </div>
+
+</body>
+
+</html>
