@@ -100,6 +100,6 @@ for(let i= 0; i<5; i++){
 //array
 let carnes= ["picanha", "costela", "alcatra", "fraldinha"];
 carnes.forEach(  (v1) => {
-    console.log(v1);
+    console.log(v1 + "index:"+index);
 } )
 // função anonima 
