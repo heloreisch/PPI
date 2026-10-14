@@ -71,7 +71,7 @@ return !e.split("").includes("p");
  
 
  }));
-
+// fazer comunicaçao entre 2 itemas apena usando tt
  console.log(JSON.stringify(itensChurrasco));
   array2=JSON.stringify("[\"bla\",\"bla\"]")
-  console.log
+  console.log(array2[1])
