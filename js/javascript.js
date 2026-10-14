@@ -103,3 +103,6 @@ carnes.forEach(  (v1) => {
     console.log(v1 + "index:"+index);
 } )
 // função anonima 
+
+
+
