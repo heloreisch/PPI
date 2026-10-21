@@ -6,27 +6,22 @@
     <title>Document</title>
 
 
-        <style>
-                .container{
-                    display: flex
-                    ;
-                }
+       <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-                .inputs{
-                    display:flex ;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .form{
-
-                }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        } 
 
         </style>
-
-
-
 
 </head>
 <body>
@@ -57,6 +52,36 @@
                 result.innerHTML= random
             } );
         </script>
+
+
+
+<!-- ou   <script>
+        btnSortear = document.getElementById("btnSortear");
+        min = document.getElementById("min");
+        max = document.getElementById("max");
+        result = document.getElementById("result");
+
+        btnSortear.addEventListener("click", () => {
+            minimo = Number(min.value);
+            maximo = Number(max.value);
+
+            if (min.value === "" || max.value === "") {
+                result.innerHTML = "Preencha os dois campos!";
+                return;
+            }
+
+            if (minimo > maximo) {
+                result.innerHTML = "O mínimo deve ser menor que o máximo!";
+                return;
+            }
+
+            random = Math.floor(
+                Math.random() * (maximo - minimo + 1)
+            ) + minimo;
+
+            result.innerHTML = random;
+        });
+    </script>-->
 
 </body>
 </html>
