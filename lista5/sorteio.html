@@ -15,7 +15,7 @@
             align-items: center;
         }
 
-        .inputs {
+        .inputs, button {
             display: flex;
             flex-direction: column;
             margin-bottom: 10px;
@@ -29,7 +29,7 @@
 
 
     <div class="container">
-        <div  class="form"></div>
+        <div  class="form">
         <div class="inputs">
             <label for="min">mnimo</label>
             <input type="number" id="min"></input>
@@ -43,14 +43,16 @@
         <button id="bntsortear">SORTEAR</button>
             <h2 id="result">-</h2>
     </div>
+    </div>
         <script>
         bntsortear.addEventListener("click", () => {
 
-                minimo=Number.parseFloat(min.value);
-                maximo=Number.parseFloat(max.value);
-                random = (Math.random()*(maximo-minimo))+minimo // retona ne 0 e 1
-                result.innerHTML= random
-            } );
+                minimo = Number.parseFloat(min.value);
+                maximo = Number.parseFloat(max.value);
+
+                 let random = Math.floor(Math.random()*(maximo-minimo))+minimo // retona ne 0 e 1
+                result.innerHTML = random
+            });
         </script>
 
 
