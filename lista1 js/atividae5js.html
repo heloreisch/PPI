@@ -1,0 +1,124 @@
+<!-- Gerador de Números Aleatórios com Intervalo Personalizado(Inteiros)
+Arquivo: 5.html
+Crie um documento HTML que gere números aleatórios com base em um intervalo informado pelo usuário.
+Crie um documento HTML que gere números aleatórios com base em um intervalo informado pelo usuário.
+Crie uma página com um <h1> contendo o texto "Sorteio de Números", um botão com o texto "Sortear" e um parágrafo identificado como resultado.
+Implemente uma função chamada sortear que gere um número aleatório entre 1 e 100 e associe essa função ao evento de clique do botão.
+Adicione dois campos <input> para que o usuário possa informar os valores mínimo e máximo do intervalo do sorteio.
+Mantenha na tela uma lista com valores sorteados e em memória em um array com valores sorteados.
+A cada sorteio  verifique se o número já foi sorteado, caso sim, escreva na tela do usuário ao lado do número quantas vezes ele foi sorteado. Sugestão: Array de Objetos.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de numeros</title>
+        <style>
+                
+                
+        div {
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: stretch;
+        }
+
+
+        #h1{
+            
+        }
+
+        .numeros {
+            display: flex;
+            margin-bottom: 10px;
+             flex-direction: column;
+             justify-content: center;
+            align-items: center;
+             transform: 50% -50%;
+        } 
+
+        #lista{
+            gap: 200px;
+        }
+
+        #btnSortear{
+            background-color: aquamarine;
+        }
+
+        </style>
+
+</head>
+<body> 
+    <div>
+        <h1>Sortear Numeros</h1>
+    <div class="numeros">
+        <label for="min">Digite o numero minimo:</label>
+        <input type="text" id="min"> 
+
+        <label for="min">Digite o numero maximo:</label>
+        <input type="text" id="max"> 
+    </div>
+
+    <button id="btnSortear"> SORTEAR </button>
+    <br>
+    <label for="">Resultado:</label>
+    <p id="resultado"></p>
+    <label for="">Hstorico:</label>
+    <p id="lista"></p>
+</div>
+
+    <script>
+        
+        btnSortear = document.getElementById("btnSortear");
+        min = document.getElementById("min");
+        max = document.getElementById("max");
+        resultado = document.getElementById("resultado");
+        // array vazio
+        var valores = [];
+        lista = document.getElementById("lista");
+        
+
+        // quando o clicarno botao
+        btnSortear.addEventListener("click", () => {
+            //tranorma em number
+            minimo = Number(min.value);
+            maximo = Number(max.value);
+
+               if (minimo > maximo) {
+                resultado.innerHTML = "O numero minimo deve ser menor que o  numero maximo!";
+                return;
+            }
+
+            if (min.value === "" || max.value === "") {
+                resultado.innerHTML = "Preencha os dois campos!";
+                return;
+            }
+
+            sortear();
+
+            // é para sortear um numero aleatorio 
+                 
+        });
+
+        function sortear(){ 
+                 random = Math.floor( Math.random() * (maximo - minimo + 1)) + minimo;
+                 // random = Math.floor( Math.random() * 100+1); para sortear naleatoriamente de 1 a 100
+                 resultado.innerHTML = random;
+
+                  // pfunction exibir
+                  valores.push(random);
+                  span = document.createElement("span")
+                  console.log(valores)
+                  span.textContent = random;
+                  lista.appendChild(span);
+            }
+
+           
+            
+            </script>
+
+</body>
+</html>
