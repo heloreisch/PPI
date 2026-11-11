@@ -7,3 +7,14 @@ function hello($s){
 
 hello("bla");
 ?>
+
+<?php
+
+function randomize(){
+    echo rand(1,100);
+   
+}
+
+randomize();
+?>
+
