@@ -1,3 +1,6 @@
+<!--Crie um site em PHP que permita ao usuário informar um número e verificar se ele é Par ou Ímpar.
+//Imprima o número informado e o resultado (Par ou Ímpar). -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

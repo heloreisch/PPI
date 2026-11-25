@@ -1,3 +1,5 @@
+<!--Crie uma função randomize() que imprima no HTML um valor numérico aleatório.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

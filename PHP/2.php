@@ -1,4 +1,4 @@
-//O PHP é executado no navegador assim como o JavaScript? Explique.
+<!--O PHP é executado no navegador assim como o JavaScript? Explique.-->
 
 <!DOCTYPE html>
 <html lang="en">

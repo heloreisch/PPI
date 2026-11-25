@@ -1,3 +1,5 @@
+<!--Crie uma função hello() que, quando chamada, imprima o texto "Hello" para o usuário.-->
+
 <?php
 
 function hello($s){
